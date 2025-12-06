@@ -7,4 +7,124 @@
     android:layout_height="match_parent"
     tools:context=".SobreActivity">
 
+    <ScrollView
+        android:id="@+id/scrollViewContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4f4f9"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/pageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Sobre Nós"
+                android:textColor="#0a1a6d"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/introSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:ellipsize="none"
+                android:singleLine="false"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/sobre_nos_intro" />
+
+            <TextView
+                android:id="@+id/nossaMissaSectionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:text="Nossa missão"
+                android:textColor="#0a1a6d"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nossaMissaSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:ellipsize="none"
+                android:singleLine="false"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/sobre_nos_nossa_missao" />
+
+            <TextView
+                android:id="@+id/tiposPatrocinioSectionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:text="Tipos de Patrocínio"
+                android:textColor="#0a1a6d"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tiposPatrocinioSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:ellipsize="none"
+                android:singleLine="false"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/sobre_nos_tipos_patrocinio" />
+
+            <TextView
+                android:id="@+id/odsEImpactoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:text="ODS e Impacto"
+                android:textColor="#0a1a6d"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/odsEImpactoSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:ellipsize="none"
+                android:singleLine="false"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/sobre_nos_ods_e_impacto" />
+
+            <TextView
+                android:id="@+id/boxJuntosPodemosMudarOJogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:ellipsize="none"
+                android:singleLine="false"
+                android:lineSpacingExtra="4dp"
+                android:text="Juntos podemos mudar o jogo. Bem-vindo à plataforma que conecta sonhos à realidade!"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
