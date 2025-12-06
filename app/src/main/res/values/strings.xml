@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Teste-de-Estudo</string>
+    <string name="conecta_atleta">Conecta Atleta</string>
+    <string name="conectando_atletas_e_patrocinadores">Conectando Atletas e Patrocinadores</string>
+    <string name="login">Login</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="sobre_nos">Sobre Nós</string>
+    <string name="tituloLogin">Entrar</string>
+    <string name="inputEmail">Email</string>
+    <string name="inputSenha">Senha</string>
+    <string name="esqueci_minha_senha">Esqueci minha senha</string>
+    <string name="btnEntrar">Entrar</string>
+    <string name="sem_conta_cadastre_se">Não tem conta? Cadastre-se</string>
+    <string name="txtcriar_conta">Criar Conta</string>
+    <string name="inputNome_completo">Nome completo</string>
+    <string name="inputEmailCadastrar">Email</string>
+    <string name="rbAtleta">Atleta</string>
+    <string name="rbApoiador">Apoiador</string>
+    <string name="inputSenhaCadastrar">Senha</string>
+    <string name="confirme_sua_senha">Confirme sua senha</string>
+    <string name="Tem_conta_facalogin">Já tem conta? Faça login</string>
+    <string name="btnInscrever">Inscrever</string>
+    <string name="area_do_atleta">Área do Atleta</string>
+    <string name="nome">Nome: --</string>
+    <string name="modalidade">Modalidade: --</string>
+    <string name="ver_treinos">Ver Treinos</string>
+    <string name="meu_perfil">Meu Perfil</string>
+    <string name="sair">Sair</string>
+    <string name="bem_vindo">Bem-vindo! Você está na área do Apoiador</string>
+
+
+</resources>

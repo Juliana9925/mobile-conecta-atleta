@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#f2f2f2">
+
+    <TextView
+        android:id="@+id/txtTituloAtleta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:text="@string/area_do_atleta"
+        android:textColor="#333"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="15dp"
+        android:background="#ffffff"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:radius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloAtleta">
+
+        <TextView
+            android:id="@+id/txtNomeAtleta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nome"
+            android:textColor="#444"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtModalidadeAtleta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/modalidade"
+            android:textColor="#444"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTreinos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#4caf50"
+        android:text="@string/ver_treinos"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPerfil" />
+
+    <Button
+        android:id="@+id/btnPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#2196f3"
+        android:text="@string/meu_perfil"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="37dp"
+        android:backgroundTint="#e53935"
+        android:text="@string/sair"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTreinos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

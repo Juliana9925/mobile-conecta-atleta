@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Avatar -->
+    <ImageView
+        android:id="@+id/avatar_image_view"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="#CCCCCC"
+        android:contentDescription="Avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Nome -->
+    <TextView
+        android:id="@+id/display_name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Brian Marty"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:maxLines="1"
+        app:layout_constraintStart_toEndOf="@id/avatar_image_view"
+        app:layout_constraintTop_toTopOf="@id/avatar_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp" />
+
+    <!-- Data -->
+    <TextView
+        android:id="@+id/post_time_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Posted on 8:34 PM, 25 March 2023"
+        android:textColor="#777777"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/display_name_text_view"
+        app:layout_constraintTop_toBottomOf="@id/display_name_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <!-- Foto do post -->
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:background="#DDDDDD"
+        app:layout_constraintTop_toBottomOf="@id/avatar_image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="H,1:1"
+        android:layout_marginTop="16dp" />
+
+    <!-- Descrição -->
+    <TextView
+        android:id="@+id/description_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Brian Marty: My favorite place on Earth"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/post_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Like + Comment -->
+    <LinearLayout
+        android:id="@+id/post_action_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/description_textview">
+
+        <!-- Like -->
+        <TextView
+            android:id="@+id/like_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 likes"
+            android:textColor="#333333"
+            android:padding="8dp" />
+
+        <!-- Comment -->
+        <TextView
+            android:id="@+id/comment_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="86 comments"
+            android:textColor="#333333"
+            android:layout_marginStart="24dp"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

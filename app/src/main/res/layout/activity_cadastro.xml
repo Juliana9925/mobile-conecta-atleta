@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".CadastroActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/txtTituloCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtcriar_conta"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp" />
+
+    <LinearLayout
+        android:id="@+id/containerCampos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/txtTituloCadastro">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/inputNome_completo"
+
+            app:boxStrokeColor="@color/primary_light">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:background="@color/background_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/inputEmailCadastrar"
+            app:boxStrokeColor="@color/primary_light"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="@color/background_grey"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Grupo de radio buttons -->
+        <RadioGroup
+            android:id="@+id/grupoPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <RadioButton
+                android:id="@+id/rbAtleta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbAtleta"
+                android:textColor="@color/primary_dark"
+                android:buttonTint="@color/primary" />
+
+            <RadioButton
+                android:id="@+id/rbApoiador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbApoiador"
+                android:textColor="@color/primary_dark"
+                android:buttonTint="@color/primary"
+                android:layout_marginStart="24dp" />
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/inputSenhaCadastrar"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeColor="@color/primary_light"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@color/background_grey"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirme_sua_senha"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeColor="@color/primary_light"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtConfirmaSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@color/background_grey"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Texto para login -->
+    <TextView
+        android:id="@+id/txtLoginRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Tem_conta_facalogin"
+        android:textColor="@color/secondary_dark"
+        android:textSize="14sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/containerCampos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão Inscrever -->
+    <Button
+        android:id="@+id/btnInscrever"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnInscrever"
+        android:textColor="@color/text_primary"
+        android:backgroundTint="@color/primary"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txtLoginRedirect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
